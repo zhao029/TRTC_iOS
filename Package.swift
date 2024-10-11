@@ -39,7 +39,9 @@ let package = Package(
                 .linkedFramework("CoreServices"),
                 .linkedFramework("Accelerate"),
                 .linkedFramework("ReplayKit"),
-                .linkedLibrary("c++")
+                .linkedLibrary("c++"),
+                .linkedLibrary("CoreMotion"),
+                .linkedLibrary("AVKit")
             ]
         )
     ]
