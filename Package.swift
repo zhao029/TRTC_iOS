@@ -2,14 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "TRTCProfessionalKit",
+    name: "TRTCKit",
     platforms: [
         .iOS(.v9)
     ],
     products: [
         .library(
-            name: "TRTCProfessional",
-            targets: ["TXLiteAVSDK_Professional_SPM"]),
+            name: "TRTC",
+            targets: ["TXLiteAVSDK_TRTC_SPM"]),
         .library(
             name: "TRTCReplayKitExt",
             targets: ["TXLiteAVSDK_ReplayKitExt"]),
@@ -18,7 +18,7 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "TXLiteAVSDK_Professional",
+            name: "TXLiteAVSDK_TRTC",
             url: "https://liteav.sdk.qcloud.com/customer/Pococha/11.9/TXLiteAVSDK_TRTC_iOS_11.9.6.1501_SDK.zip",
             checksum: "4f0c2f718c2caf3260221c3bfd591eb18ab3b0783486ec45512b0e3e48e5dd43"
            ),
@@ -28,9 +28,9 @@ let package = Package(
             checksum: "c6059b9782be6a847d3f27a69fa54385f12ab79f07e24efdd9ff4bd1da3f344d"
             ),
         .target(
-            name: "TXLiteAVSDK_Professional_SPM",
+            name: "TXLiteAVSDK_TRTC_SPM",
             dependencies: [
-                .target(name: "TXLiteAVSDK_Professional")
+                .target(name: "TXLiteAVSDK_TRTC")
             ],
             sources: ["trtc_swift_package.swift"],
             linkerSettings: [
