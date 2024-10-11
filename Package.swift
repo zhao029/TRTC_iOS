@@ -40,8 +40,8 @@ let package = Package(
                 .linkedFramework("Accelerate"),
                 .linkedFramework("ReplayKit"),
                 .linkedLibrary("c++"),
-                .linkedLibrary("CoreMotion"),
-                .linkedLibrary("AVKit")
+                .linkedFramework("CoreMotion"),
+                .linkedFramework("AVKit")
             ]
         )
     ]
