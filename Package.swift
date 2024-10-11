@@ -19,8 +19,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TXLiteAVSDK_Professional",
-            url: "https://liteav.sdk.qcloud.com/customer/Pococha/SPM/TXLiteAVSDK_Professional.xcframework.zip",
-            checksum: "806872867596d32cf2a37f1ac29136418baebd28fe3bb3817e196c70da938db8"
+            url: "https://liteav.sdk.qcloud.com/customer/Pococha/11.9/TXLiteAVSDK_TRTC_iOS_11.9.6.1501_SDK.zip",
+            checksum: "4f0c2f718c2caf3260221c3bfd591eb18ab3b0783486ec45512b0e3e48e5dd43"
            ),
         .binaryTarget(
             name: "TXLiteAVSDK_ReplayKitExt",
